@@ -9,3 +9,4 @@
 
 * [English to FOL](<README (1).md>)
 * [FOL to CNF](latihan-fol-ai-dibuat-ai/fol-to-cnf.md)
+* [Resolution](latihan-fol-ai-dibuat-ai/resolution.md)
