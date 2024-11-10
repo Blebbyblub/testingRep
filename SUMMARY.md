@@ -1,10 +1,10 @@
 # Table of contents
 
-## 📚 Materi&#x20;
+## 📚 MATERI
 
 * [Materi Miss Lili](README.md)
 
-## ✍️ Latihan FOL AI&#x20;
+## ✍️ Latihan FOL AI (Dibuat AI)
 
-* [English to FOL](latihan-fol-ai/english-to-fol.md)
-* [FOL to CNF](latihan-fol-ai/fol-to-cnf.md)
+* [English to FOL](latihan-fol-ai-dibuat-ai/readme.md)
+* [FOL to CNF](latihan-fol-ai-dibuat-ai/fol-to-cnf.md)
