@@ -2,7 +2,8 @@
 
 ## 📚 Materi
 
-* [Materi Miss Lili](README.md)
+* [👩 Materi Miss Lili](README.md)
+* [Miro](materi/miro.md)
 
 ## ✍️ Latihan FOL AI (Dibuat AI)
 
