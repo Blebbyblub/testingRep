@@ -133,3 +133,91 @@ Assume the following facts are given:
    * The resolution process yields PutOutFire(John), meaning we have proven that if John sees smoke and has water, he will put out the fire.
 
 </details>
+
+
+
+### Question:
+
+Use resolution to prove or disprove the statement: \
+_"Bob is successful"_\
+\
+Assume the following facts are given:
+
+1. All students who study hard pass their exams.
+2. Every student who passes their exams is happy.
+3. Everyone who is happy has a good life.
+4. Alice is a student.
+5. Bob is a student and he studies hard.
+6. If a person has a good life, they are successful.
+7. Alice does not study hard.
+
+<details>
+
+<summary>Click to reveal the answer</summary>
+
+### Answers:
+
+#### 1. Translate each statement to First-Order Logic (FOL)
+
+1. All students who study hard pass their exams.\
+   $$\forall x (Student(x) \land StudyHard(x) \rightarrow PassExam(x))$$
+2. Every student who passes their exams is happy.\
+   $$\forall x (Student(x) \land PassExam(x) \rightarrow Happy(x))$$
+3. Everyone who is happy has a good life.\
+   $$\forall x (Happy(x) \rightarrow GoodLife(x))$$
+4. Alice is a student.\
+   $$Student(Alice)$$
+5. Bob is a student and he studies hard.\
+   $$Student(Bob) \land StudyHard(Bob)$$
+6. If a person has a good life, they are successful.\
+   $$\forall x (GoodLife(x) \rightarrow Successful(x))$$
+7. Alice does not study hard.\
+   $$eg StudyHard(Alice)$$
+
+#### 2. Convert the FOL statements to Conjunctive Normal Form (CNF)
+
+1. $$\forall x (Student(x) \land StudyHard(x) \rightarrow PassExam(x))$$\
+   **CNF:**\
+   $$eg Student(x) \lor \neg StudyHard(x) \lor PassExam(x)$$
+2. $$\forall x (Student(x) \land PassExam(x) \rightarrow Happy(x))$$\
+   **CNF:**\
+   $$eg Student(x) \lor \neg PassExam(x) \lor Happy(x)$$
+3. $$\forall x (Happy(x) \rightarrow GoodLife(x))$$\
+   **CNF:**\
+   $$eg Happy(x) \lor GoodLife(x)$$
+4. $$Student(Alice)$$\
+   **CNF:**\
+   $$Student(Alice)$$
+5. $$Student(Bob) \land StudyHard(Bob)$$\
+   **CNF:**\
+   $$Student(Bob), \quad StudyHard(Bob)$$
+6. $$\forall x (GoodLife(x) \rightarrow Successful(x))$$\
+   **CNF:**\
+   $$eg GoodLife(x) \lor Successful(x)$$
+7. $$eg StudyHard(Alice)$$\
+   **CNF:**\
+   $$eg StudyHard(Alice)$$
+
+#### 3. Prove using Resolution that Bob is successful
+
+To prove $$Successful(Bob)$$ using resolution, we use the derived CNF statements.
+
+1. **Given Clauses**:
+   * $$eg Student(x) \lor \neg StudyHard(x) \lor PassExam(x)$$ — Clause 1
+   * $$eg Student(x) \lor \neg PassExam(x) \lor Happy(x)$$ — Clause 2
+   * $$eg Happy(x) \lor GoodLife(x)$$ — Clause 3
+   * $$Student(Alice)$$ — Clause 4
+   * $$Student(Bob)$$ — Clause 5a
+   * $$StudyHard(Bob)$$ — Clause 5b
+   * $$eg GoodLife(x) \lor Successful(x)$$ — Clause 6
+   * $$eg StudyHard(Alice)$$ — Clause 7
+2. **Resolution Proof**:
+   * From Clause 5a ($$Student(Bob)$$) and Clause 5b ($$StudyHard(Bob)$$), we know $$Student(Bob) \land StudyHard(Bob)$$.
+   * Substitute $$x = Bob$$ in Clause 1: $$eg Student(Bob) \lor \neg StudyHard(Bob) \lor PassExam(Bob)$$, and with $$Student(Bob)$$ and $$StudyHard(Bob)$$, we resolve to $$PassExam(Bob)$$.
+   * Substitute $$x = Bob$$ in Clause 2: $$eg Student(Bob) \lor \neg PassExam(Bob) \lor Happy(Bob)$$, and with $$Student(Bob)$$ and $$PassExam(Bob)$$, we resolve to $$Happy(Bob)$$.
+   * Substitute $$x = Bob$$ in Clause 3: $$eg Happy(Bob) \lor GoodLife(Bob)$$, and with $$Happy(Bob)$$, we resolve to $$GoodLife(Bob)$$.
+   * Substitute $$x = Bob$$ in Clause 6: $$eg GoodLife(Bob) \lor Successful(Bob)$$, and with $$GoodLife(Bob)$$, we resolve to $$Successful(Bob)$$.
+3. **Conclusion**:
+   * We have proven that $$Successful(Bob)$$ holds true using resolution.
+
+</details>
