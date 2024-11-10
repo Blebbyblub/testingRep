@@ -1,2 +1,2 @@
-# Exercise 1 (Pakai AI)
+# English to FOL
 

@@ -1,3 +1,5 @@
 # Table of contents
 
-* [Exercise 1 (Pakai AI)](README.md)
+## Latihan FOL AI
+
+* [English to FOL](README.md)
