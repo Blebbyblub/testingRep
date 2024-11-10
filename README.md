@@ -16,6 +16,8 @@ AI sesi 7 & 8
 
 <figure><img src=".gitbook/assets/03. AI sesi 7 &#x26; 8_page-0006.jpg" alt=""><figcaption></figcaption></figure>
 
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src=".gitbook/assets/03. AI sesi 7 &#x26; 8_page-0007.jpg" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/03. AI sesi 7 &#x26; 8_page-0008.jpg" alt=""><figcaption></figcaption></figure>
