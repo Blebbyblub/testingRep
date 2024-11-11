@@ -13,5 +13,6 @@
 
 ## 💥 Soal QUIZ
 
-* [Soal QUIZ LB20](soal-quiz/soal-quiz-lb20.md)
 * [Soal QUIZ LA20](soal-quiz/soal-quiz-la20.md)
+* [Soal QUIZ LB20](soal-quiz/soal-quiz-lb20.md)
+* [UTS 2 Tahun Lalu](soal-quiz/uts-2-tahun-lalu.md)
